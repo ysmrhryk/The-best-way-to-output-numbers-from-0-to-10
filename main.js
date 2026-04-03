@@ -1,7 +1,7 @@
 var n = undefined;
 var data = '[';
 
-while(!!(JSON.stringify(data).length < parseInt('0x17', 16))){
+while(!!(data.length < parseInt('0x17', 16))){
     n = -~n;
     data = `${data}${n},`;
 }
